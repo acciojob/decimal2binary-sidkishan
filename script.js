@@ -4,6 +4,6 @@ function decimalToBinary(num) {
 		temp += num % 2
 		num = Math.floor(num / 2)
 	}
-	return temp.reverse();
+	return temp.split("").reverse().join("");
 }
 module.exports = decimalToBinary;
