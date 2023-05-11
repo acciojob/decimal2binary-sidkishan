@@ -1,5 +1,9 @@
 function decimalToBinary(num) {
-	let temp = 7/2;
-  console.log(temp)
+	let temp = "";
+	while(num != 0){
+		temp += num % 2
+		num = Math.floor(num / 2)
+	}
+	return temp.reverse();
 }
 module.exports = decimalToBinary;
